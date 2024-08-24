@@ -12,9 +12,7 @@
       },
       "Docker": {
         "Entrypoint": [
-          "/bin/sh",
-          "-c",
-          "nvidia-smi --query-gpu=name --format=csv,noheader"
+          "nvidia-smi"
         ],
         "Image": "nvcr.io/nvidia/cuda:11.6.2-base-ubuntu20.04"
       },
