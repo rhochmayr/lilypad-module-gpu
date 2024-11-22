@@ -1,6 +1,6 @@
 {
   "machine": {
-    "gpu": 1,
+    "gpu": {{ .Gpu }},
     "cpu": 16000,
     "ram": 131072
   },
@@ -26,7 +26,7 @@
         "Type": "IPFS"
       },
       "Resources": {
-        "GPU": "1"
+        "GPU": {{ .Gpu }}
       },
       "Timeout": 1800,
       "Verifier": "Noop"
